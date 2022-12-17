@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingsActivity"
-    class="com.mogli.notificationlog2.SettingsFragment"
+    tools:context="org.cottonseeds.notificationlog.SettingsActivity"
+    class="org.cottonseeds.notificationlog.SettingsFragment"
     android:id="@+id/activity_setting">
 
 </fragment>

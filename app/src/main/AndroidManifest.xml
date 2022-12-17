@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.mogli.notificationlog2">
+    package="org.cottonseeds.notificationlog">
 
     <dist:module dist:instant="true" />
 
@@ -16,31 +16,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".AppPreferenceActivity"
+            android:name="org.cottonseeds.notificationlog.AppPreferenceActivity"
             android:label="App log preference"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="org.cottonseeds.notificationlog.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".AppPreferenceActivity" />
+                android:value="org.cottonseeds.notificationlog.AppPreferenceActivity" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="org.cottonseeds.notificationlog.SettingsActivity"
             android:label="Settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="org.cottonseeds.notificationlog.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SettingsActivity" />
+                android:value="org.cottonseeds.notificationlog.SettingsActivity" />
         </activity>
         <activity
-            android:name=".ReminderActivity"
+            android:name="org.cottonseeds.notificationlog.ReminderActivity"
             android:label="Set Reminder"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="org.cottonseeds.notificationlog.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ReminderActivity" />
+                android:value="org.cottonseeds.notificationlog.ReminderActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="org.cottonseeds.notificationlog.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,7 +50,7 @@
         </activity>
 
         <service
-            android:name=".NotificationListener"
+            android:name="org.cottonseeds.notificationlog.NotificationListener"
             android:label="@string/service_name"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
@@ -59,7 +59,7 @@
         </service>
 
         <provider
-            android:name=".NotifProvider"
+            android:name="org.cottonseeds.notificationlog.NotifProvider"
             android:authorities="com.mogli.notificationslog2"
             android:exported="false" />
     </application>
